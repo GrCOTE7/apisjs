@@ -1,6 +1,7 @@
-$encre: rgb(0, 0, 255);
-$bgcElt: rgb(255, 0, 0);
-$bgcTrElt: rgba(255, 0, 0, 0.2);
+@import 'essais.scss';
+
+$encre: #333;
+$lines: #000;
 
 body {
   padding: 0;
@@ -9,88 +10,7 @@ body {
   height: 100%;
   font-family: arial;
   color: $encre;
+  transform: all 1s;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-self: center;
-  height: 100%;
-}
 
-h1 {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
-
-#logo-gc-svg {
-  position: absolute;
-  top: 7px;
-  left: 15px;
-  opacity: 0;
-}
-
-#logo-online-svg {
-  padding: 7px 0;
-  stroke-width: 3;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 0;
-  position: absolute;
-  margin-left: -250px;
-  margin-top: 550px;
-  width: 500px;
-  height: 100px;
-  background-color: #000;
-  border-radius: 7px;
-}
-
-#emoji {
-  font-size: 50px;
-  position: absolute;
-  top: -30px;
-  left: -30px;
-}
-
-.demo-wrapper {
-  position: absolute;
-  left: 20px;
-}
-
-#cadre {
-  position: absolute;
-  display: flex;
-  width: 315px;
-  height: 42px;
-  border: 7px solid grey;
-  border-radius: 50px;
-  align-items: center;
-  z-index: 5;
-  margin-top: 10px;
-  // margin-left: 100px;
-}
-
-#fill {
-  width: 0px;
-  height: 45px;
-  min-width: 50px;
-  ;
-  border-radius: 9999px;
-  z-index: 1;
-  background-color: $bgcTrElt;
-
-}
-
-#ball {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 44px;
-  // border: 2px solid $bgcTrElt;
-  background-color: lighter($bgcTrElt);
-  border-radius: 99px;
-  padding-left: 10px;
-  z-index: 2;
-}
