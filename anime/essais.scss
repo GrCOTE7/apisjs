@@ -1,9 +1,19 @@
-$encreEssais: rgb(0, 0, 255) !important;
+$encre: rgb(0, 0, 255);
 $bgcElt: rgb(255, 0, 0);
 $bgcTrElt: rgba(255, 0, 0, 0.2);
 
-#essais {
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: arial;
+  color: $encre;
+  transform: all 1s;
+  // background-color: #000;
+}
 
+#essais {
   main {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +23,7 @@ $bgcTrElt: rgba(255, 0, 0, 0.2);
   }
 
   h1 {
-    color: $encreEssais;
+    color: $encre;
     position: absolute;
     width: 100%;
     text-align: center;

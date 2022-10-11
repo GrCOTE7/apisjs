@@ -1,7 +1,7 @@
 import anime from 'animejs/lib/anime.min.js';
 // import { render } from 'sass';
 
-import './style.scss'
+import './lStyle.scss'
 // import './linesAnimation.js'
 
 

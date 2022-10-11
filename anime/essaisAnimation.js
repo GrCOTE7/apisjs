@@ -49,14 +49,14 @@ anime({
   duration: 1000,
   direction: 'alternate',
   loop: 7,
-  easing: 'easeOutCirc',
+  easing: 'linear',
   update: function (anim) {
     updates2++;
     let prog = Math.round(anim.progress)
     progressLogEl.innerHTML = prog + '%'
     console.log(typeof prog)
     myLogo.style.opacity = prog / 100
-    fillElt.style.width = prog + 9 + '%'
+    fillElt.style.width = prog + 15 + '%'
     fillElt.style.backgroundColor = 'rgba(255,0,0,0.2)'
     fillElt.style.zIndex = 7;
     if (prog < 1) fillElt.style.backgroundColor = 'rgba(255,0,0,0)'
