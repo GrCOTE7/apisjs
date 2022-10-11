@@ -21,8 +21,9 @@ $bgcTrElt: rgba(255, 0, 0, 0.2);
 
   #logo-gc-svg {
     position: absolute;
+    margin: 0 auto;
     top: 7px;
-    left: 15px;
+    // left: 15px;
     opacity: 0;
   }
 
@@ -33,7 +34,7 @@ $bgcTrElt: rgba(255, 0, 0, 0.2);
     stroke-dashoffset: 0;
     position: absolute;
     margin-left: -250px;
-    margin-top: 550px;
+    margin-top: 470px;
     width: 500px;
     height: 100px;
     background-color: #000;
