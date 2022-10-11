@@ -1,6 +1,6 @@
 $encre: rgb(215, 215, 215);
 $lines: rgb(255, 255, 255);
-$bgc:#000;
+$bgc: #000;
 
 body {
   padding: 0;
@@ -15,20 +15,11 @@ body {
 
 #blocLines {
   margin-top: 40px;
-  
+
   .line {
     background-color: $encre;
     height: 2px;
-    line-height: .7em;
-    margin: 10px 50px;
+    margin: 15px 70px;
     width: 0;
-  }
-
-  #line1 {
-    width: 120px; // 150
-  }
-
-  #line2 {
-    width: 70px; // 100
   }
 }

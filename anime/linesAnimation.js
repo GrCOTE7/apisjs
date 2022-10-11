@@ -1,16 +1,16 @@
-// import anime from './animejs/lib/anime.min.js'
+import anime from 'animejs/lib/anime.es.js'
 
-// let updates=0;
+let updates=0;
 
-// anime({
-//   targets: ".line #blocLines",
-//   easing: 'easeOutQuad',
-//   duration: 7000,
-//   loop: 1,
-//   update: function (a) {
-//     updates++
-
-//   }
-// })
+anime({
+  targets: "#line1",
+  width: '200px',
+  easing: 'linear'
+})
+anime({
+  targets: "#line2",
+  width: '120px',
+  easing: 'linear'
+})
 
 console.log('Ready.')
