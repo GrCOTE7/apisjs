@@ -1,4 +1,4 @@
-$encre: rgb(174, 162, 162);
+$encre: rgb(215, 215, 215);
 $lines: rgb(255, 255, 255);
 $bgc:#000;
 
@@ -13,22 +13,22 @@ body {
   background-color: $bgc;
 }
 
-// #blocLines {
-//   margin-top: 40px;
+#blocLines {
+  margin-top: 40px;
   
-//   .line {
-//     background-color: $encre;
-//     height: 2px;
-//     line-height: 1em;
-//     margin: 20px 50px;
-//     width: 0;
-//   }
+  .line {
+    background-color: $encre;
+    height: 2px;
+    line-height: .7em;
+    margin: 10px 50px;
+    width: 0;
+  }
 
-//   #line1 {
-//     width: 100px; // 150
-//   }
+  #line1 {
+    width: 120px; // 150
+  }
 
-//   #line2 {
-//     // width: 0; // 100
-//   }
-// }
+  #line2 {
+    width: 70px; // 100
+  }
+}
