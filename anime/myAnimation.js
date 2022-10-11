@@ -20,16 +20,12 @@ console.log(myLogo)
 anime({
   targets: '#logo-online-svg path',
   strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutQuad',
+  easing: 'easeInOutSine',
   duration: 5000,
   delay: 10,
   direction: 'alternate',
   loop: true
 })
-
-
-
-
 
 anime({
   targets: "#emoji",
