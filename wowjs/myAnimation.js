@@ -1,10 +1,13 @@
 import anime from 'animejs/lib/anime.min.js';
+// import { defineConfig } from 'vite';
 
 var updates = 0;
 
 let progressLogEl = document.getElementById('ball')
 let fillElt = document.getElementById('fill')
+let ballElt = document.getElementById('ball')
 
+console.log(ballElt.style.backgroundColor)
 // console.log(ball.innerHTML)
 
 anime({

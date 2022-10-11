@@ -1,5 +1,5 @@
-$encre: blue;
-$bgcElt: red;
+$encre: rgb(0, 0, 255);
+$bgcElt: rgb(255, 0, 0);
 
 body {
   padding: 0;
@@ -39,7 +39,7 @@ h1 {
   min-width: 50px;;
   border-radius: 9999px;
   z-index: 1;
-  background-color: #f00;
+  background-color: $bgcElt;
   
 }
 
