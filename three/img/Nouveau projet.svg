@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+	<title>Nouveau projet</title>
+	<defs>
+		<image  width="1280" height="720" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALQAQMAAAD1s08VAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAIdJREFUeJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeBrE3wABB8CymgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 90px;fill: #050505;font-weight: 400;font-family: "OldStandardTT-Regular", "Old Standard TT" } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<text id="Anime" style="transform: matrix(1,0,0,1,522,302)" >
+		<tspan x="-127.3" y="0" class="t0">A</tspan><tspan  y="0" class="t0">n</tspan><tspan  y="0" class="t0">i</tspan><tspan  y="0" class="t0">m</tspan><tspan  y="0" class="t0">e
+</tspan>
+	</text>
+</svg>
