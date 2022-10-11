@@ -36,7 +36,7 @@
                     "text": "AnimeJs",
                     "hyperlink": "https://animejs.com/documentation/",
                     "hyperlinkTitle": "",
-                    "progress": 3
+                    "progress": 7
                 },
                 "children": [
                     {
@@ -54,9 +54,10 @@
                         "data": {
                             "id": "cniwv6n5waw0",
                             "created": 1665472888716,
-                            "text": "Outil SVG",
-                            "hyperlink": "https://codepen.io/anthonydugois/pen/mewdyZ",
-                            "hyperlinkTitle": ""
+                            "text": "Outil SVG\n(Logo GC)",
+                            "hyperlink": "https://codepen.io/GrCOTE7/pen/YzLRMdy",
+                            "hyperlinkTitle": "",
+                            "progress": 9
                         },
                         "children": []
                     },
@@ -154,6 +155,27 @@
                     "hyperlinkTitle": ""
                 },
                 "children": []
+            },
+            {
+                "data": {
+                    "id": "cnj3pwjpza00",
+                    "created": 1665492222688,
+                    "text": "PureCSS"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnj3pzkb9w80",
+                            "created": 1665492229254,
+                            "text": "EffetsSimples",
+                            "hyperlink": "https://www.youtube.com/watch?v=rmKHEey19Js",
+                            "hyperlinkTitle": "",
+                            "font-weight": "bold",
+                            "progress": 2
+                        },
+                        "children": []
+                    }
+                ]
             }
         ]
     },
