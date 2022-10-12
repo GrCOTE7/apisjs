@@ -1,25 +1,95 @@
-$encre: rgb(215, 215, 215);
-$lines: rgb(255, 255, 255);
-$bgc: #000;
+$encre: #f1f1f1;
+$bgc: #333;
 
-body {
-  padding: 0;
+*,
+::before,
+::after {
+  box-sizing: border-box;
   margin: 0;
-  width: 100%;
-  height: 100%;
-  font-family: arial;
-  color: $encre;
-  transform: all 1s;
-  background-color: $bgc;
+  padding: 0;
 }
 
-#blocLines {
-  margin-top: 40px;
+body {
+  position: relative;
+  font-family: arial, sans-serif;
+  color: $encre;
+  transform: all .5s easeInOut;
+  height: 100vh;
+  background-color: $bgc;
+  background: url('img/foretlumdown.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
 
-  .line {
-    background-color: $encre;
-    height: 2px;
-    margin: 15px 70px;
-    width: 0;
+.lines {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+
+.line {
+  background-color: $encre;
+  border-radius: 5px;
+  height: 3px;
+}
+
+.l1 {
+  width: 250px;
+}
+
+.l2 {
+  position: relative;
+  top: 20px;
+  width: 140px;
+}
+
+.main {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: Abril fatface, sans-serif;
+  font-size: 110px;
+}
+
+h1:only-child {
+  position: relative;
+}
+
+.btns {
+  position: relative;
+  top: 50px;
+}
+
+.btn {
+  border: 2px solid $encre;
+  outline: none;
+  background: transparent;
+  color: $encre;
+  padding: 20px;
+  font-size: 30px;
+  width: 300px;
+  cursor: pointer;
+  transition: all 1s;
+
+  &.btn1 {
+    margin-right: 30px;
   }
+
+  &:hover {
+    background-color: $encre;
+    color: $bgc;
+  }
+}
+
+
+.htmlTests {
+  display: none;
+  position: relative;
+  border-top: 2px solid #fff;
+  margin-top: 100px;
 }
