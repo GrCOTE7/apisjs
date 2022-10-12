@@ -10,7 +10,7 @@ $bgc: #333;
 }
 
 body {
-  position: relative;
+  // position: relative;
   font-family: arial, sans-serif;
   color: $encre;
   transform: all .5s easeInOut;
@@ -20,6 +20,33 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+}
+
+#canadaLogo {
+  position: relative;
+  text-align: center;
+  top: 100px;
+  
+  // position: absolute;
+  // top: 130px;
+  // padding: 0 auto;
+  // // left: 140px;
+}
+
+#effect {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 5%;
+  font-size: 24px;
+  color: red
+}
+
+#numEffect {
+  color: rgb(0, 255, 247);
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 5%;
+  font-size: 24px;
 }
 
 .lines {
