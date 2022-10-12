@@ -2,7 +2,7 @@
 // import { render } from 'sass';
 
 import './lStyle.scss'
-import './linesAnimation.js'
+import './pageOneAnimation.js'
 
 
 // import './essais.scss'

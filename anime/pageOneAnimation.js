@@ -17,8 +17,8 @@ function myAnimation(effect) {
   })
   anime({
     targets: ".l2",
-    duration: 2000,
     width: '140px',
+    duration: 2000,
     easing: effect
   })
 
@@ -83,21 +83,16 @@ function showAllEffects() {
   }, 3000);
 }
 
-anime({
+let step = 0
+let spirale = anime({
   targets: '#canadaLogo path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
-  duration: 20000,
+  duration: 10000,
   delay: 100,
   direction: 'alternate',
   loop: true,
   update: function (anim) {
-    // updates2++;
     let prog = Math.round(anim.progress)
-    // progressLogEl.innerHTML = prog + '%'
-    // console.log(typeof prog)
-    // myLogo.style.opacity = prog / 100
-    if (prog >50) fillElt.style.backgroundColor = 'rgba(255,0,0,0)'
   }
-  
 })
