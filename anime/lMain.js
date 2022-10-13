@@ -3,6 +3,7 @@
 
 import './lStyle.scss'
 import './pageOneAnimation.js'
+import './pageTransition.js'
 
 
 // import './essais.scss'
