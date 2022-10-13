@@ -1,7 +1,7 @@
 $thin: 7px;
 $thick1: 77px;
 $thick2: 75px;
-$thick3: 73px;
+$thick3: 75px;
 
 *,
 ::before,
@@ -43,7 +43,7 @@ body {
 }
 
 .blue {
-  border: $thick3 solid rgb(45, 45, 245);
+  border: $thick3 solid rgb(30, 128, 240);
   background-color: beige;
 }
 
