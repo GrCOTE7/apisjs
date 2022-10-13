@@ -1,0 +1,21 @@
+{
+  "name": "apisjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prod": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0",
+    "vite": "^3.1.7"
+  },
+  "devDependencies": {
+    "codes-postaux": "^3.6.0"
+  }
+}
