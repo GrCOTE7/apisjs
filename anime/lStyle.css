@@ -1,0 +1,130 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial, sans-serif;
+  color: #f1f1f1;
+  transform: all 0.5s easeInOut;
+}
+body .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+body #firstScreen {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  background: url("img/foretlumdown.jpg");
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+}
+body #firstScreen #canadaLogo {
+  position: relative;
+  margin: 15% auto;
+}
+body #firstScreen #effect {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 5%;
+  font-size: 24px;
+  color: red;
+}
+body #firstScreen #numEffect {
+  color: rgb(0, 255, 247);
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 5%;
+  font-size: 24px;
+}
+body #firstScreen .lines {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+body #firstScreen .line {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  height: 3px;
+}
+body #firstScreen .l1 {
+  width: 250px;
+}
+body #firstScreen .l2 {
+  position: relative;
+  top: 20px;
+  width: 140px;
+}
+body #firstScreen h1 {
+  margin-left: 5%;
+  text-transform: uppercase;
+  font-family: Abril fatface, sans-serif;
+  font-size: 110px;
+}
+body #firstScreen .btns {
+  position: relative;
+  top: 50px;
+}
+body #firstScreen .btn {
+  border: 2px solid #f1f1f1;
+  outline: none;
+  background: transparent;
+  color: #f1f1f1;
+  padding: 20px;
+  font-size: 30px;
+  width: 300px;
+  cursor: pointer;
+  transition: all 1s;
+}
+body #firstScreen .btn.btn1 {
+  margin-right: 30px;
+  margin-left: 5%;
+}
+body #firstScreen .btn:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+body #firstScreen .htmlTests {
+  display: none;
+  position: relative;
+  border-top: 2px solid #fff;
+  margin-top: 100px;
+}
+body #secondScreen {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  direction: column;
+  z-index: 2;
+}
+body #secondScreen #bgSecondScreen {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  background-size: 100vh 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0%;
+  background-image: url("./img/montagne.jpg");
+  background-color: rgba(255, 255, 255, 0.3);
+  background-attachment: fixed;
+}/*# sourceMappingURL=lStyle.css.map */
