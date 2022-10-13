@@ -1,0 +1,61 @@
+.main {
+    width : 100vw;
+    height : 100vh;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
+.card_canada {
+    border : 2px solid blue;
+    border-radius: 20px;
+    width : 46%;
+    height : 46%;
+    margin : 10px;
+    position : relative;
+}
+.card_canada .photo_city {
+    width : 100%;
+    height : 100%;
+    object-fit: fill;
+    border-radius: inherit;
+    z-index: 1;
+}
+.card_1 svg {
+    position: absolute;
+    z-index: 4;
+}
+.city {
+    position: absolute;
+    z-index: 3;
+    font-size: 1rem;
+    font-weight: 800;
+    color : blue;
+}
+#city1 {
+    top : 270px;
+    left : 40px;
+}
+#city2 {
+    top : 160px;
+    left : 220px;
+}
+#city3 {
+    top : 335px;
+    left : 640px;
+}
+#city4 {
+    top : 360px;
+    left : 620px;
+}
+#city5 {
+    top : 390px;
+    left : 520px;
+}
+#airplane {
+    position: absolute;
+    z-index: 4;
+    width : 50px;
+}

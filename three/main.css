@@ -1,9 +1,103 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+#main {
     width : 100vw;
     height : 100vh;
-    background-image: url('./img/fond_image.avif');
+    background-image: url('./img/foretlumdown.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
-.logo {
-    width : 50px;
+#logo {
+    width : 1px;
+    height: 1px;
+    cursor: pointer;
+    position: absolute;
+    right : 5%;          /*2.9%;*/
+    top : 8%;
+}
+.icons {
+    position: absolute;
+    right : 3.3%;
+    top : 50%;
+    transform: translateY(-50%);
+}
+.icon {
+    position : relative;
+    width : 60px;
+    height : 60px;
+    background-color: white;
+    border-radius: 50%;
+    margin : 10px 0;
+    cursor: pointer;
+}
+.icon img {
+    width : 40px;
+    height : 40px;
+    position : absolute;
+    top : 10px;
+    left : 10px;
+}
+.title {
+    position : absolute;
+    top : 30%;
+    left : 5%;
+}
+.title span{
+    display: inline-block;
+    margin : 0 10px;
+    position : relative;
+    font-size: 110px;
+    color : #f1f1f1;
+    font-family: 'Abril Fatface', cursive;
+    transform: translateY(-10%);
+}
+.options {
+    width : 630px;
+    position : absolute;
+    top : 510px;
+    left : 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.option {
+    width : 300px;
+    border : 2px #f1f1f1 solid;
+    background: transparent;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.option:hover {
+    transition : all 0.3s ease-in-out;
+    background-color: #f1f1f1;
+}
+.option:hover a {
+    transition : all 0.3s ease-in-out;
+    color : #333;
+}
+.option a {
+    text-decoration: none;
+    color : #f1f1f1;
+    font-size: 30px;
+    padding : 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#trait1, #trait2 {
+    width : 1px;
+    height : 3px;
+    background-color: white;
+    position: relative;
+    top : 6%;
+    left : 5%;
+    border-radius: 5px;
+}
+#trait2 {
+    top : calc(6% + 20px);
 }
