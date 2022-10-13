@@ -26,6 +26,8 @@
 .card_1 svg {
     position: absolute;
     z-index: 4;
+    top : -180px;
+    left : 63px;
 }
 .city {
     position: absolute;
@@ -58,4 +60,6 @@
     position: absolute;
     z-index: 4;
     width : 50px;
+    left : 38px;
+    top : -205px;
 }
