@@ -1,0 +1,24 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+body {
+  font-family: roboto, arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 30px;
+}
+
+h1 {
+  font-family: 'Comic Sans MS', sans-serif;
+  margin: 20px 0;
+}
+
+hr {
+  margin-bottom: 10px;
+}
