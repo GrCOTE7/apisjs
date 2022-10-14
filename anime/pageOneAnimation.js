@@ -1,7 +1,7 @@
 import anime from 'animejs/lib/anime.es.js'
 
-myAnimation('linear');
-// showAllEffects()
+// myAnimation('linear');
+showAllEffects()
 
 function myAnimation(effect) {
 

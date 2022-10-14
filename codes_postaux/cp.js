@@ -1,8 +1,16 @@
 import codesPostaux from 'codes-postaux/index.js';
 
-let cp = 21130
+let cp = 21121
 
 let communes = codesPostaux.find(cp)
+
+// communes = [
+//   {nomCommune : "A"},
+//   {nomCommune : "B"},
+//   // {nomCommune : "C"},
+//   // {nomCommune : "D"},
+// ]
+
 console.log(communes)
 
 let affCommunes = document.getElementById('communes')
@@ -20,7 +28,7 @@ console.log(nb)
 
 if (nb > 0) {
   let intro = (nb > 1 ? 'Les' : 'La') + ' ville' + (nb > 1 ? 's' : '') + ' dont le code postale est <span class="cp">' + cp + '</span> ' + (nb > 1 ? 'sont' : 'est') + ' :'
-  let citiesList = res.slice(0, -1).join(`, `) + (nb > 1 ? (' et ' + (nb > 2 ? 'enfin, ' : '')) : '') + res.slice(-1) + '.'
+  let citiesList = res.slice(0, -1).join(`, `) + (nb > 1 ? (' et ' + (nb > 3 ? 'enfin, ' : '')) : '') + res.slice(-1) + '.'
   
   affCommunes.innerHTML = intro + '<hr>' + citiesList;
 

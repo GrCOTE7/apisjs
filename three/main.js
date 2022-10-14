@@ -47,7 +47,7 @@ anime({
         {
         value : ['-30%', '0'],
         duration : 1000,
-        delay: anime.stagger(500),
+        delay: anime.stagger(500, {start:2500}),
         easing: 'easeInOutSine',
         }
 })
