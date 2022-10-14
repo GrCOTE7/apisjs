@@ -1,23 +1,42 @@
 import codesPostaux from 'codes-postaux/index.js';
 
 let cp = 21130
+
 let communes = codesPostaux.find(cp)
+console.log(communes)
+
 let affCommunes = document.getElementById('communes')
-let cities = document.getElementsByTagName('span')
+let hotCity = document.getElementsByClassName("city")
+let hotCp = document.getElementsByClassName("cp")
+cp = cp.toFixed(0).replace(/(?<=\d)(?=(\d{3})+(?!\d))/g, ' ')
 
 let res = []
 communes.forEach((commune) => {
-  res.push(commune.nomCommune)
+  res.push('<span class="city">' + commune.nomCommune + '</span>')
 })
-console.log(res)
 
-let text = res.map((c) => { return '<span>' + c + '</span>' }).slice(0, -1).join(`,<br>`) + '<br>et enfin,<br> ' + '<span>' + res.slice(-1) + '</span>'
+let nb = res.length
+console.log(nb)
 
-if (res.length > 0) {
-  affCommunes.innerHTML = cp + '<hr>' + text;
+if (nb > 0) {
+  let intro = (nb > 1 ? 'Les' : 'La') + ' ville' + (nb > 1 ? 's' : '') + ' dont le code postale est <span class="cp">' + cp + '</span> ' + (nb > 1 ? 'sont' : 'est') + ' :'
+  let citiesList = res.slice(0, -1).join(`, `) + (nb > 1 ? (' et ' + (nb > 2 ? 'enfin, ' : '')) : '') + res.slice(-1) + '.'
   
-  [...cities].forEach((c) => {
-    c.style.color = 'blue'
-    c.style.fontWeight = 'bold'
+  affCommunes.innerHTML = intro + '<hr>' + citiesList;
+
+  [...hotCity].forEach((i) => {
+    i.style.color = 'blue'
+    i.style.fontWeight = 'bold'
+    i.style.fontSize = '1.2rem'
   })
+} else {
+  let noCities = 'Le code postale <span class="cp">' + cp + '</span> n\'est celui d\'aucune ville.'
+  affCommunes.innerHTML = noCities;
 }
+
+[...hotCp].forEach((i) => {
+  i.style.color = 'blue'
+  i.style.fontWeight = 'bold'
+  i.style.fontSize = '2rem'
+})
+console.log(hotCp)

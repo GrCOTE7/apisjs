@@ -19,6 +19,10 @@ h1 {
   margin: 20px 0;
 }
 
+p {
+  text-align: justify;
+}
+
 hr {
   margin-bottom: 10px;
 }/*# sourceMappingURL=cp.css.map */
