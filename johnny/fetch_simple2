@@ -1,0 +1,65 @@
+
+const h1 = document.createElement('h1')
+const p = document.createElement('p')
+document.body.appendChild(h1)
+document.body.appendChild(p)
+
+let zone = 'metropole'
+
+h1.innerHTML = 'Jours fériés de la ' + zone
+h1.style.color = 'blue'
+
+const OPENPOINT = 'https://calendrier.api.gouv.fr/jours-feries'
+
+var year = document.createElement("input");
+year.setAttribute("type", "text");
+year.setAttribute("name", "year");
+year.setAttribute("placeholder", "Année ?");
+
+//@dl
+// year.setAttribute("value", "2022");
+
+var btn = document.createElement("button");
+btn.innerHTML = 'Submit'
+
+var form = document.createElement("form");
+form.append(year);
+form.append(btn);
+
+document.getElementsByTagName("body")[0]
+  .appendChild(form);
+
+btn.addEventListener('click', async (e) => {
+  e.preventDefault()
+
+  let yearValue = year.value
+
+  let req = OPENPOINT + '/' + zone + '/' + yearValue + '.json'
+
+  // throw new Error("ERROR") // return false
+
+  let fetchdata = await fetch(req)
+    .then((response) => {
+      return response.json()
+    })
+
+  console.log(fetchdata)
+  let days = Object.entries(fetchdata)
+  console.log(days)
+
+  let txt = []
+
+  const table = document.createElement('table')
+  days.forEach((d) => {
+    (txt += ('<tr></tr><td>' + d[1] + ' (' + d[0] + ')</td></tr>'))
+  })
+
+  p.appendChild(table)
+  table.innerHTML = txt
+
+})
+
+// setTimeout(() => {
+//   btn.click()
+// }, 7000)
+

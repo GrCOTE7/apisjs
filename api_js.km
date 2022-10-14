@@ -212,6 +212,25 @@
                     "progress": 1
                 },
                 "children": []
+            },
+            {
+                "data": {
+                    "id": "cnlitg654eo0",
+                    "created": 1665737937057,
+                    "text": "TOOLS"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnlithng00o0",
+                            "created": 1665737940280,
+                            "text": "https://swagger.io/tools/swagger-editor/",
+                            "hyperlink": "https://swagger.io/tools/swagger-editor/",
+                            "hyperlinkTitle": ""
+                        },
+                        "children": []
+                    }
+                ]
             }
         ]
     },
