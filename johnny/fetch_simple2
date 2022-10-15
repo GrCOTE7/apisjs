@@ -51,15 +51,19 @@ btn.addEventListener('click', async (e) => {
 
   const table = document.createElement('table')
   days.forEach((d) => {
-    (txt += ('<tr></tr><td>' + d[1] + ' (' + d[0] + ')</td></tr>'))
+    (txt += ('<tr></tr><td>' + d[1] + '</td><td>' + d[0] + '</td></tr>'))
   })
-
+  
   p.appendChild(table)
   table.innerHTML = txt
-
+  
+  let tds = document.getElementsByTagName('td')
+  tds.forEach((td)=>{
+    td.style.color= 'red'
+  })
 })
 
-// setTimeout(() => {
-//   btn.click()
-// }, 7000)
+setTimeout(() => {
+  btn.click()
+}, 7000)
 
