@@ -1,4 +1,4 @@
-# Quizz
+# ElliptiQuizz
 
 ---
 Team: Andrew - Lionel - Patrick
